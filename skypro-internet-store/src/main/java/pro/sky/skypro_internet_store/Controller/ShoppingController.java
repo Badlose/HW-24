@@ -4,7 +4,6 @@ package pro.sky.skypro_internet_store.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import pro.sky.skypro_internet_store.Model.Item;
 import pro.sky.skypro_internet_store.Service.ShoppingService;
 
 import java.util.List;
@@ -23,7 +22,7 @@ public class ShoppingController {
     }
 
     @RequestMapping("/get")
-    public List<Item> get() {
+    public String get() {
         return shoppingService.get();
     }
 }

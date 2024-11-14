@@ -7,7 +7,6 @@ import pro.sky.skypro_internet_store.Service.ShoppingService;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 @Service
 @SessionScope
@@ -24,9 +23,7 @@ public class ShoppingServiceImpl implements ShoppingService {
     }
 
     @Override
-    public List<Item> get() {
-        return basket.stream()
-                .filter(Objects::nonNull)
-                .toList();
+    public String get() {
+        return basket.toString();
     }
 }

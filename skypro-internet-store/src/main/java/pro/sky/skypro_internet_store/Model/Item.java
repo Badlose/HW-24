@@ -3,7 +3,7 @@ package pro.sky.skypro_internet_store.Model;
 import java.util.Objects;
 
 public class Item {
-    public final Integer itemId;
+    private final Integer itemId;
 
     public Item(Integer itemId) {
         this.itemId = itemId;
